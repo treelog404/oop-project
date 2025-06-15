@@ -1,0 +1,467 @@
+{
+	"info": {
+		"_postman_id": "45905174-de3ddfb9-6b06-40b5-aee5-8dd10ef4049a",
+		"name": "oop-project collection",
+		"description": "Collection for testing the capabilities of the project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "get_all_users",
+					"id": "45905174-6d16d6f2-fbbf-4321-a479-8ae35b1863a5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9999/users",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_user_by_id",
+					"id": "45905174-2a09c37f-27fe-4756-9ddd-0552207ea552",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9999/users/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_user_post",
+					"id": "45905174-f152cfee-9891-4bfb-af64-7cd7cf9addc3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9999/users/2/posts",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"users",
+								"2",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_user",
+					"id": "45905174-53ca8a20-e188-4940-9237-2fabd3392e0f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"User1\",\r\n    \"lastName\": \"User1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/users",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_user",
+					"id": "45905174-267e4c57-3854-4f60-a691-7d9c878ca5d5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Updated user\",\r\n    \"lastName\": \"Updated user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/users/2",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_user",
+					"id": "45905174-8471137e-845a-4bbc-a5d2-e55e89b26794",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:9999/users/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "45905174-a1735efb-b2a0-4b92-8916-ac6ef39a2da2"
+		},
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "get_all_posts",
+					"id": "45905174-da7ded47-473f-4774-83e5-1455d2dda054",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9999/posts",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_post_by_id",
+					"id": "45905174-2d0729f5-dcdc-4244-b4b0-db9809c32a52",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9999/posts/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_post_comments",
+					"id": "45905174-b3f8b247-7b6b-4219-8599-f05f65225bfc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9999/posts/2/comments",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"posts",
+								"2",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_post",
+					"id": "45905174-69757ac9-b648-45df-b914-80ec1568c699",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Post 1\",\r\n    \"text\": \"Post 1\",\r\n    \"authorId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/posts",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_post",
+					"id": "45905174-ef332094-7bbc-4e2e-9b3c-dc99bab35e09",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"title\": \"Updated post\",\r\n    \"text\": \"Updated post\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/posts",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_post",
+					"id": "45905174-0457b40e-30b4-4f1a-99c4-875b82cf3389",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:9999/posts/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "45905174-5eb60fa2-ed4d-4b8b-832a-2b8bfc6823f6"
+		},
+		{
+			"name": "comment",
+			"item": [
+				{
+					"name": "get_all_comments",
+					"id": "45905174-6bda5f5e-3be6-4e76-98b6-e9db26762ef6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9999/comments",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_comment_by_id",
+					"id": "45905174-90391067-0f5c-4ac5-8296-9e59df1ade27",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9999/comments/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"comments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_comment",
+					"id": "45905174-5193b9af-a37f-4d1b-b4fb-54df89cadc0d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\": \"My first comment\",\r\n    \"authorId\": 2,\r\n    \"postId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/comments",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_comment",
+					"id": "45905174-53b5c66a-337d-40cb-86a9-fb7630f43451",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"text\": \"Updated comment\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/comments",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_comment",
+					"id": "45905174-5bc5e9e0-abb5-4f2b-ad91-c944cefc8723",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:9999/comments/2",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"comments",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "45905174-2932efff-3e35-415c-b356-7d5567a431c1"
+		}
+	]
+}
