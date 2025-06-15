@@ -1,6 +1,6 @@
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Проект по дисциплине "Объектно-ориентированное программирование"
 
 ## Installation
 
